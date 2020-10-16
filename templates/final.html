@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prediction</title>
+
+        <style>
+            imgs{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
+                height: 300px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            h2{
+                font-size: 20px;
+                color: blueviolet;
+                background-color: rgb(221, 236, 10);
+                display: block;
+                margin: 0px auto;
+            }
+        </style>
+</head>
+<body>
+    <h1>prediction</h1>
+    {%if data==0%} 
+    <div>
+        <img src="../static/images/ifzero1.png" alt="you are safe " class="imgs">
+        <h2>you have  no risk ,have agood day</h2>
+    </div>
+    {%else%}
+    <div>
+        <img src="../static/images/if_one.jpg" alt="you have to go to doctor" class="imgs">
+        <h2>no worry, but you should take a test and consult doctor</h2>
+    </div> 
+    {%endif%} 
+    <a href="/">go back to home page</a>
+</body>
+</html>

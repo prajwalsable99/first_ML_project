@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart_failure_prediction</title>
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/style1.css') }}" > 
+
+
+</head>
+<body>
+    <div id="div1">
+    <h1>heart_failure_prediction using ML</h1>
+    <form method="POST" action="{{url_for('home')}}"class="form_text">
+        age:<input type="text" name="age" class="inpstyle">
+      
+        <p>Anaemia:
+        yes:<input type="radio" name="anaemia" value="1">
+        no:<input type="radio" name="anaemia" value="0">
+        </p>
+     
+        creatinine_phosphokinase(mcg/L):<input type="text" name="creatinine_phosphokinase" class="inpstyle">
+        <br>
+        <p>diabetes:
+        yes:<input type="radio" name="diabetes" value="1">
+        no:<input type="radio" name="diabetes" value="0">
+        </p>
+       
+        ejection_fraction( precentage):<input type="text" name="ejection_fraction" class="inpstyle">
+        <br>
+        <p>BLOOD_PRESSURE
+        HIGH:<input type="radio" name="high_blood_pressure" value="1">
+        LOW:<input type="radio" name="high_blood_pressure" value="0">
+        </p>
+       
+        platelets(kiloplat/mL):<input type="text" name="platelets"class="inpstyle">
+        <br>
+        serum_creatinine(mg/dL):<input type="text" name="serum_creatinine" class="inpstyle">
+        <br>
+        serum_sodium(mEq/L):<input type="text" name="serum_sodium" class="inpstyle">
+        
+
+        <p>GENDER:
+        male:<input type="radio" name="gender" value="1">
+        female:<input type="radio" name="gender" value="0">
+        </p>
+        
+        <p>SMOKING:
+        yes:<input type="radio" name="smoking" value="1">
+        no:<input type="radio" name="smoking" value="0">
+        </p>
+
+        <input type="submit" value="predict" class="pred_button"> 
+
+    </div>
+
+
+    </form>
+    
+
+</body>
+</html>
